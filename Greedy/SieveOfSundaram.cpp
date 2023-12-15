@@ -5,7 +5,6 @@ void sieveOfsun(int n){
     int newN=(n-1)/2;
     bool marked[newN+1];
     memset(marked,false,sizeof(marked));
-    
     for(int i=1;i<=newN;i++){
         for(int j=i;(i+j+2*i*j)<=newN;j++){
             marked[i+j+2*i*j]=true;
