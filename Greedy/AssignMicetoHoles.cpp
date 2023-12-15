@@ -3,7 +3,6 @@ using namespace std;
 
 class Solution {
 public:
-
   int assignMiceHoles(int N, int M[], int H[]) {
     sort(M, M + N);
     sort(H, H + N);
